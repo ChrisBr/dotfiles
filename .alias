@@ -1,0 +1,14 @@
+# OSC CLI aliases
+# Internal osc build.suse.de
+alias iosc='osc -A iosc'
+# Development osc localhost:3000
+alias tosc='osc -A tosc'
+
+# Directory navigation aliases
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias h='cd'
+
+alias g='git'
+alias be="bundle.ruby2.4 exec"
+alias mkdir="mkdir -p"
