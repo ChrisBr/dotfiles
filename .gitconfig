@@ -1,0 +1,25 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Christian Bruckmayer
+email = cbruckmayer@suse.com
+signingkey = 108C44E5
+
+[commit]
+gpgsign = true
+
+[alias]
+	co = checkout
+	ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate
+	ci = commit
+	c = commit -m
+	br = branch
+	cob = checkout -b
+	sl = stash list
+	sp = stash pop
+	s = stash
+	up = !git fetch upstream && git rebase upstream/master
+	ir = rebase -i origin/master
+
+[gpg]
+	program = gpg2
