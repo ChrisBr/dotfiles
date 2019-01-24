@@ -6,7 +6,6 @@
 # important for language settings, see below.
 
 test -z "$PROFILEREAD" && . /etc/profile || true
-PATH=$PATH:~/.gem/ruby/2.4.0/bin 
 
 # Most applications support several languages for their output.
 # To make use of this feature, simply uncomment one of the lines below or
@@ -27,3 +26,4 @@ PATH=$PATH:~/.gem/ruby/2.4.0/bin
 #    /usr/bin/fortune
 #    echo
 #fi
+

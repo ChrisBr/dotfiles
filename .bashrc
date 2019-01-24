@@ -38,8 +38,12 @@ function color_my_prompt {
 }
 color_my_prompt
 
+transfer() { if [ $# -eq 0 ]; then echo -e "No arguments specified. Usage:\necho transfer /tmp/test.md\ncat /tmp/test.md | transfer test.md"; return 1; fi 
+tmpfile=$( mktemp -t transferXXX ); if tty -s; then basefile=$(basename "$1" | sed -e 's/[^a-zA-Z0-9._-]/-/g'); curl --progress-bar --upload-file "$1" "https://transfer.sh/$basefile" >> $tmpfile; else curl --progress-bar --upload-file "-" "https://transfer.sh/$1" >> $tmpfile ; fi; cat $tmpfile; rm -f $tmpfile; } 
+
 export HISTCONTROL=ignoreboth:erasedups
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000
 
 alias config='/usr/bin/git --git-dir=/home/cbruckmayer/.cfg/ --work-tree=/home/cbruckmayer'
+

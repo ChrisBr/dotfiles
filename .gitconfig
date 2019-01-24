@@ -20,6 +20,9 @@ gpgsign = true
 	s = stash
 	up = !git fetch upstream && git rebase upstream/master
 	ir = rebase -i origin/master
+	pushf = push --force-with-lease
 
 [gpg]
 	program = gpg2
+[pager]
+	branch = false
