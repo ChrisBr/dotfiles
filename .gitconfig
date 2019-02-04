@@ -3,7 +3,7 @@
 # Please adapt and uncomment the following lines:
 name = Christian Bruckmayer
   email = christian@bruckmayer.net
-signingkey = 108C44E5
+signingkey = D6BA0622D3A4D7EE5EFA6DEEFD05603FBE421262
 
 [commit]
 gpgsign = true
@@ -23,6 +23,6 @@ gpgsign = true
 	pushf = push --force-with-lease
 
 [gpg]
-	program = gpg2
+	program = gpg
 [pager]
 	branch = false
