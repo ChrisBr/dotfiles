@@ -45,5 +45,5 @@ export HISTCONTROL=ignoreboth:erasedups
 export HISTFILESIZE=1000000000
 export HISTSIZE=1000000
 
-alias config='/usr/bin/git --git-dir=/home/cbruckmayer/.cfg/ --work-tree=/home/cbruckmayer'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
