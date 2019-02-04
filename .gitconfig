@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 name = Christian Bruckmayer
-email = cbruckmayer@suse.com
+  email = christian@bruckmayer.net
 signingkey = 108C44E5
 
 [commit]
