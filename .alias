@@ -8,6 +8,7 @@ alias tosc='osc -A tosc'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias h='cd'
+alias la='ls -la'
 
 alias g='git'
 alias be="bundle.ruby2.4 exec"
