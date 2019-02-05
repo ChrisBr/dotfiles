@@ -5,6 +5,7 @@ alias iosc='osc -A iosc'
 alias tosc='osc -A tosc'
 
 # Directory navigation aliases
+alias ..='cd ..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias h='cd'
