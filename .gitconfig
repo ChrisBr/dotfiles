@@ -26,3 +26,5 @@ gpgsign = true
 	program = /usr/local/MacGPG2/bin/gpg2
 [pager]
 	branch = false
+[core]
+	excludesfile = /Users/cbruckmayer/.gitignore_global
