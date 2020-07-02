@@ -39,3 +39,10 @@ Thumbs.db
 # Ruby related files #
 ######################
 .byebug_history
+.bundle
+vendor/bundle
+vendor/gems
+
+.overcommit.yml
+
+.vscode

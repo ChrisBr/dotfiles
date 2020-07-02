@@ -2,7 +2,7 @@
 [user]
 # Please adapt and uncomment the following lines:
 name = Christian Bruckmayer
-  email = christian@bruckmayer.net
+email = christian@bruckmayer.net
 signingkey = D6BA0622D3A4D7EE5EFA6DEEFD05603FBE421262
 
 [commit]
@@ -21,6 +21,10 @@ gpgsign = true
 	up = !git fetch upstream && git rebase upstream/master
 	ir = rebase -i origin/master
 	pushf = push --force-with-lease
+        amend = commit --amend -C HEAD
+        dif = diff
+        branches = for-each-ref --sort=-committerdate --count=10 refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
+
 
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2

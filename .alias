@@ -12,5 +12,23 @@ alias h='cd'
 alias la='ls -la'
 
 alias g='git'
-alias be="bundle.ruby2.4 exec"
+alias gti='git'
+alias be="bundle exec"
 alias mkdir="mkdir -p"
+
+# Uberspace
+# sudo sshuttle -r chrisbr@pictor.uberspace.de 0.0.0.0/0 -vv
+alias uberspace="ssh chrisbr@pictor.uberspace.de"
+alias tanja_old="ssh tanja@gacrux.uberspace.de"
+alias tanja="ssh tanja@barnard.uberspace.de"
+alias sck="ssh sck@whipple.uberspace.de"
+
+# Docker
+drm() { docker rm $(docker ps -a -q); }
+dka() { docker kill $(docker ps -q); }
+
+alias rlias=". ~/.alias"
+alias whatsmyip='curl -s https://am.i.mullvad.net/json | jq'
+
+alias todo="vim ~/todo.md"
+alias til="vim ~/til.md"

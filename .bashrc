@@ -34,7 +34,7 @@ function color_my_prompt {
     local __git_branch_color="\[\033[31m\]"
     local __git_branch='`git branch 2> /dev/null | grep -e ^* | sed -E  s/^\\\\\*\ \(.+\)$/\(\\\\\1\)\ /`'
     local __delimiter="\[\033[38;5;231m\]>\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)\]"
-    export PS1="$__time $__user_and_host $__cur_location $__git_branch_color$__git_branch$__delimiter"
+    export PS1="$__time $__cur_location $__git_branch_color$__git_branch$__delimiter"
 }
 color_my_prompt
 
