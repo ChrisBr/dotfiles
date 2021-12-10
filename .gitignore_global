@@ -43,6 +43,9 @@ Thumbs.db
 vendor/bundle
 vendor/gems
 
+ruby/vendor/bundle
+ruby/vendor/gems
+
 .overcommit.yml
 
 .vscode

@@ -18,8 +18,8 @@ alias mkdir="mkdir -p"
 
 # Uberspace
 # sudo sshuttle -r chrisbr@pictor.uberspace.de 0.0.0.0/0 -vv
-alias uberspace="ssh chrisbr@pictor.uberspace.de"
-alias tanja_old="ssh tanja@gacrux.uberspace.de"
+# https://openid.stackexchange.com - christian@bruckmayer.net
+alias uberspace='ssh chrisbr@fenrir.uberspace.de'
 alias tanja="ssh tanja@barnard.uberspace.de"
 alias sck="ssh sck@whipple.uberspace.de"
 
@@ -32,5 +32,3 @@ alias whatsmyip='curl -s https://am.i.mullvad.net/json | jq'
 
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
-alias todo="vim ~/todo.md"
-alias til="vim ~/til.md"
