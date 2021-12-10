@@ -3,8 +3,8 @@
 # Please adapt and uncomment the following lines:
   name = Christian Bruckmayer
   email = christian.bruckmayer@shopify.com
-  signingkey = D6BA0622D3A4D7EE5EFA6DEEFD05603FBE421262
-
+  #signingkey = D6BA0622D3A4D7EE5EFA6DEEFD05603FBE421262
+  signingkey = 4292BAA650EC512BB5FA6B5BEEC57EE2F7BFE843
 [commit]
 gpgsign = true
 
