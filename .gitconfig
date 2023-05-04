@@ -3,7 +3,6 @@
 # Please adapt and uncomment the following lines:
   name = Christian Bruckmayer
   email = christian.bruckmayer@shopify.com
-  #signingkey = D6BA0622D3A4D7EE5EFA6DEEFD05603FBE421262
   signingkey = 4292BAA650EC512BB5FA6B5BEEC57EE2F7BFE843
 [commit]
 gpgsign = true
@@ -30,7 +29,7 @@ gpgsign = true
 [pager]
 	branch = false
 [core]
-	excludesfile = /Users/cbruckmayer/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	commitGraph = true
 [diff]
 	algorithm = patience
@@ -39,11 +38,3 @@ gpgsign = true
 [protocol]
 	version = 2
 
-[url "https://github.com/"]
-	insteadOf = git@github.com:
-	insteadOf = git@github.com:
-	insteadOf = ssh://git@github.com/
-	insteadOf = ssh://git@github.com/
-[credential]
-	helper = 
-	helper = store --file /opt/dev/var/private/git_credential_store
